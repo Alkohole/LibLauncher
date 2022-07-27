@@ -16,7 +16,6 @@
 .raw { display: block; }
 /* close commented backslash hack */
 
-
 body {
 	margin: 0px auto;
 	background-color: #495942;
@@ -29,24 +28,22 @@ body {
 	position: relative;
 	width: 100%;
 	height: 50px;
-	border-top: 1px solid #85917B;
-	border-bottom: 1px solid #3C4638;
+	border-bottom: 2px solid #3C4638;
 }
 .bottom {
 	display: block;
-	position:absolute;
+	position:relative;
 	bottom: 0px;
 	width: 100%;
 	height: 50px;
-	border-top: 1px solid #85917B;
-	border-bottom: 1px solid #3C4638;
+	border-top: 2px solid #85917B;
 }
 .mesh {
 	display: block;
 	width: 100%;
 	min-height: 600px;
-	border-top: 1px solid #85917B;
-	border-bottom: 1px solid #3C4638;
+	border-top: 2px solid #85917B;
+	border-bottom: 2px solid #3C4638;
 }
 .lib {
 	float: left;
@@ -56,10 +53,10 @@ body {
 	margin-bottom: 5px;
 	height: calc(100vh - 112px);
 	width: 260px;
-	border-top: 1px solid #85917B;
-	border-left: 1px solid #85917B;
-	border-bottom: 1px solid #3C4638;
-	border-right: 1px solid #3C4638;
+	border-top: 2px solid #85917B;
+	border-left: 2px solid #85917B;
+	border-bottom: 2px solid #3C4638;
+	border-right: 2px solid #3C4638;
 }
 .lab {
 	float: left;
@@ -69,10 +66,10 @@ body {
 	margin-bottom: 5px;
 	height: calc(100vh - 112px);
 	width: calc(100% - 260px);
-	border-top: 1px solid #85917B;
-	border-left: 1px solid #85917B;
-	border-bottom: 1px solid #3C4638;
-	border-right: 1px solid #3C4638;
+	border-top: 2px solid #85917B;
+	border-left: 2px solid #85917B;
+	border-bottom: 2px solid #3C4638;
+	border-right: 2px solid #3C4638;
 }
 .add {
 	margin-top: 15px;
@@ -93,8 +90,8 @@ body {
 	font-size: 14px;
 }
 .ad:hover {
-	background-color: #85917B;
-	font-size: 16px;
+	background-color: #566B4A;
+	color: #94905E;
 }
 .de {
 	display: block;
@@ -173,4 +170,90 @@ iframe {
 	border-right: 2px solid #85917B;
 	border-top: 2px solid #3C4638;
 	border-left: 2px solid #3C4638;
+}
+
+.play {
+	border-top: 2px solid #85917B;
+	border-left: 2px solid #85917B;
+	border-bottom: 2px solid #3C4638;
+	border-right: 2px solid #3C4638;
+	background-color: #495942;
+	color: #828458;
+	font-size: 16px;
+	height: 30px;
+	width: 90px;
+	text-align: left;
+}
+.play:hover {
+	color: #94905E;
+	background-color: #566B4A;
+	border-bottom: 2px solid #85917B;
+	border-right: 2px solid #85917B;
+	border-top: 2px solid #3C4638;
+	border-left: 2px solid #3C4638;
+}
+
+#zag {
+	color: #94905E;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 24px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #566B4A;
+	border-left: 1px solid #3C4638;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #495942;
+    box-shadow: inset 1px 1px 1px #85917B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #566B4A;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+		height: 24px;
+    background: linear-gradient(120deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(240deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #495942 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #929F88;
+   	border-top: 1px solid #85917B;
+		border-left: 1px solid #85917B;
+		border-bottom: 1px solid #3C4638;
+		border-right: 1px solid #3C4638;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+		height: 24px;
+    background:
+        linear-gradient(300deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #495942 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #929F88;
+   	border-top: 1px solid #85917B;
+		border-left: 1px solid #85917B;
+		border-bottom: 1px solid #3C4638;
+		border-right: 1px solid #3C4638;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #495942 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #929F88;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #495942 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #495942 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #929F88;
 }
